@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "981f3376-6822-4319-b48c-3746699ed381",
+		"name": "e-commerce rest api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "list all product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "62b7153c-c70b-4c06-99e4-54373cc76fb9",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/productslist?page=0&size=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productslist"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list all category",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "62b7153c-c70b-4c06-99e4-54373cc76fb9",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/searchcategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"searchcategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by category id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "62b7153c-c70b-4c06-99e4-54373cc76fb9",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"7\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/searchcategoryid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"searchcategoryid"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
