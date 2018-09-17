@@ -1,0 +1,5 @@
+docker login --username username --password password
+
+docker tag my-image username/my-repo:tag
+
+docker push username/my-repo:tag
