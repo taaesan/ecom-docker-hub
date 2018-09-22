@@ -3,6 +3,7 @@ Delivery images of e-commerce application.
 
 ### Prerequisites
 [Docker Desktop](https://www.docker.com/products/docker-desktop) - To run docker engine
+
 [Git](https://git-scm.com/downloads) - To clone git repository
 
 ![console](resources/image3.png)
