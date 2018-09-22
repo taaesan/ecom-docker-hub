@@ -35,7 +35,7 @@ services:
    - database   
 
  restapi:
-  image: taaesan/ecom:back-end
+  image: taaesan/ecom:back-end-v2
   #build: ./e-commerce-service
   ports:
    - 8080:8080 #export 8080 and Docker will pick a random one
@@ -46,7 +46,7 @@ services:
    - redis
 
  angular:
-  image: taaesan/ecom:front-end
+  image: taaesan/ecom:front-end-v2
   #build: ./e-commerce-web
   ports:
    - 4200:4200 #export 8080 and Docker will pick a random one
