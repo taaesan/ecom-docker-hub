@@ -1,0 +1,5 @@
+taaesan/ecom:mysql taaeappb842.azurecr.io/mysql
+phpmyadmin/phpmyadmin:latest taaeappb842.azurecr.io/phpadmin
+taaesan/ecom:redis taaeappb842.azurecr.io/redis
+taaesan/ecom:back-end-v2 taaeappb842.azurecr.io/restapi
+taaesan/ecom:front-end-v2 taaeappb842.azurecr.io/angular
