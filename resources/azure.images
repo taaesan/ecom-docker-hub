@@ -1,0 +1,5 @@
+taaeapp.azurecr.io/mysql
+taaeapp.azurecr.io/phpadmin
+taaeapp.azurecr.io/redis
+taaeapp.azurecr.io/restapi
+taaeapp.azurecr.io/angular
