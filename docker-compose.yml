@@ -46,7 +46,7 @@ services:
    - redis
 
  angular:
-  image: taaesan/ecom:front-end-v2
+  image: taaesan/ecom:front-end-v3
   #build: ./e-commerce-web
   ports:
    - 80:4200 #export 8080 and Docker will pick a random one
